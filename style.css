@@ -1,0 +1,190 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* This is the styling of the header */
+
+
+.row { 
+    display: flex;
+    justify-content: space-between;
+}
+
+/* This is the styling of the nav bar */
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+    background-color: #D90E1A;
+    width: 100%;
+    position: fixed;
+    border-bottom: solid white 3px;
+}
+
+.nav__list {
+   visibility: hidden;
+   display: flex;
+   margin: 0 auto;
+   color: white;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    padding: 10px 0px;
+}
+
+.santa {
+   width: 100%;
+}
+
+.img {
+    max-width: 500px;
+}
+
+
+
+#calendar {
+    padding-top: 25px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%
+}
+
+
+
+.btn {
+    background-color: black;
+    border: none;
+    padding: 1em 2em;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:focus, .btn:hover {
+    background-color: #D90E1A;
+}
+
+.content {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.explore {
+    padding: 2rem 0rem;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 70%;
+    margin-bottom: 50px;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.advent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.advent + .advent {
+    margin-bottom: 25px;
+}
+
+.container p {
+    font-size: 0.85em;
+    color: black;
+    line-height: 2em;
+    margin-top: -10px;
+}
+
+.text {
+    max-width: 40%;
+    margin-left: 20px;
+}
+
+.social__icon {
+    max-width: 70px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    border-bottom: black solid 10px;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 1.25em;
+    padding: 2em;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 6em;
+}
+
+
+@media screen and (max-width: 1180px) {
+
+    section {
+        margin: 20px;
+    }
+
+    .content, .calendar, .advent__img {
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .container {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .container + .container {
+        margin-top: 2em;
+    }
+
+    .text {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .santa {
+        padding-top: 4rem;
+    }
+
+
+    .img {
+        max-width: 100%;
+    }
+
+  }

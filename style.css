@@ -18,13 +18,16 @@ body {
 
 /* This is the styling of the nav bar */
 
+
+
 .nav {
-    display: flex;
-    margin: 0 auto;
+    display: grid;
+    place-items: center;
     background-color: #D90E1A;
     width: 100%;
     position: fixed;
     border-bottom: solid white 3px;
+    padding: 0;
 }
 
 .nav__list {
@@ -38,8 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 150px;
-    padding: 10px 0px;
+    max-width: 100px;
 }
 
 .santa {
@@ -124,25 +126,32 @@ body {
 }
 
 .social__icon {
-    max-width: 70px;
+    max-width: 50px;
 }
 
 .footer {
+    padding: 1rem;
+    text-align: center;
     background-color: black;
     color: white;
-    border-bottom: black solid 10px;
-    text-align: center;
+    margin-top: 1rem;
 }
 
 .footer h1 {
-    font-size: 1.25em;
-    padding: 2em;
+    font-size: 1rem;
 }
+
+.footer p {
+    font-size: .65rem;
+}
+
+
 
 .socials {
     display: flex;
     justify-content: center;
     margin-top: 6em;
+    max-width: 100%;
 }
 
 
